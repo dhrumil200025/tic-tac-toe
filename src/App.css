@@ -1,0 +1,110 @@
+.game-page {
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.25rem;
+}
+
+.subtitle {
+  margin-top: 0.5rem;
+  color: #9ca3af;
+}
+
+.game {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.game-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.status {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.board-row {
+  display: flex;
+}
+
+.square {
+  width: 64px;
+  height: 64px;
+  background: #111827;
+  border: 1px solid #1f2937;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.1s ease, background 0.1s ease;
+}
+
+.square:hover {
+  transform: scale(1.05);
+  background: #1f2937;
+}
+
+.square-winning {
+  background: #22c55e;
+  color: #022c22;
+}
+
+.reset-button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  background: #3b82f6;
+  color: white;
+  font-weight: 600;
+}
+
+.reset-button:hover {
+  filter: brightness(1.1);
+}
+
+.game-info {
+  min-width: 200px;
+  max-width: 260px;
+}
+
+.game-info h2 {
+  margin-top: 0;
+}
+
+.history-button {
+  width: 100%;
+  margin: 0.125rem 0;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+  background: #111827;
+  color: #e5e7eb;
+  text-align: left;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+.history-button:hover {
+  border-color: #4b5563;
+}
+
+.history-current {
+  background: #4b5563;
+}
